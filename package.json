@@ -1,0 +1,82 @@
+{
+  "name": "dsh-plugin-feed",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Personalized plugin recommendations for DeepSeek Harness, learned lazily from local session history.",
+  "license": "MIT",
+  "author": "SSHOOTING",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SSHOOTING/dsh-plugin-feed.git"
+  },
+  "homepage": "https://github.com/SSHOOTING/dsh-plugin-feed#readme",
+  "bugs": {
+    "url": "https://github.com/SSHOOTING/dsh-plugin-feed/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./profile": "./src/profile.js",
+    "./recommender": "./src/recommender.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "bin",
+    "docs",
+    "data/catalog.seed.json.gz",
+    "cordis.patch.yml",
+    "README.md",
+    "RELEASE-NOTES-v0.1.0.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "recommendation",
+    "personalization",
+    "lazy-learning",
+    "plugin-market",
+    "feed"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0-rc.2 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node scripts/check-syntax.mjs",
+    "build:seed": "node scripts/build-catalog-seed.mjs",
+    "feed:scan": "node bin/feed-scan.mjs"
+  },
+  "bin": {
+    "dsh-plugin-feed": "bin/feed-scan.mjs"
+  }
+}

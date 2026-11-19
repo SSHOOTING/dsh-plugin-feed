@@ -1,0 +1,18 @@
+# Portable bundle patch for dsh-plugin-feed.
+#
+# All paths below are optional. The defaults live inside the installed package,
+# which is convenient for a local `link:` install. For a packaged install, set
+# them to a user-owned, writable directory in the profile patch layer.
+- insert:
+    - id: plugin-feed
+      name: dsh-plugin-feed
+      config:
+        userId: local-first-user
+        # sessionsRoot: 'E:/program/DeepSeek/.dsh/sessions'
+        # profileDir: 'E:/program/DeepSeek/.dsh/profiles/web'
+        # catalogCachePath: '<writable data directory>/catalog-cache.json'
+        # feedbackPath: '<writable data directory>/feedback.json'
+        # catalogUrl: 'https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json'
+        maxSessions: 600
+        feedSize: 24
+        catalogRefreshHours: 24

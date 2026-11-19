@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">dsh-plugin-feed 的猜你喜欢设置页示意</title>
+  <desc id="desc">展示用户画像、兴趣方向、失败痛点和双列插件推荐卡片。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f8fb"/>
+      <stop offset="0.55" stop-color="#f1f4fa"/>
+      <stop offset="1" stop-color="#edf6f4"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f4f7ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4c79b8"/>
+      <stop offset="1" stop-color="#6d5ca8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#26364d" flood-opacity="0.09"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#26364d" flood-opacity="0.06"/>
+    </filter>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      .muted { fill: #7b8494; }
+      .ink { fill: #202735; }
+      .secondary { fill: #4e596a; }
+      .mono { font-family: "Cascadia Mono", Consolas, monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" rx="28" fill="url(#bg)"/>
+  <circle cx="1080" cy="80" r="190" fill="#dfe9ff" opacity="0.55"/>
+  <circle cx="1120" cy="650" r="230" fill="#dff3ed" opacity="0.55"/>
+
+  <rect x="34" y="28" width="1132" height="704" rx="22" fill="#ffffff" stroke="#e1e6ef" filter="url(#shadow)"/>
+
+  <g transform="translate(66 58)">
+    <text x="0" y="0" fill="#6c5ca8" font-size="11" font-weight="700" letter-spacing="2">本机个性化插件推荐</text>
+    <text x="0" y="38" class="ink" font-size="28" font-weight="700">猜你喜欢</text>
+    <text x="0" y="63" class="muted" font-size="13">把 DSH 历史当作你的用户画像，即时重排插件目录</text>
+    <rect x="932" y="-6" width="108" height="34" rx="17" fill="#202735"/>
+    <text x="986" y="16" fill="#ffffff" text-anchor="middle" font-size="12" font-weight="600">重新分析</text>
+    <rect x="1052" y="-6" width="44" height="34" rx="17" fill="#f1f3f7" stroke="#e0e4ec"/>
+    <path d="M1070 7h8v14l-4-2.5-4 2.5z" fill="none" stroke="#6b7586" stroke-width="1.4" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(66 142)">
+    <rect width="1068" height="166" rx="18" fill="url(#hero)" stroke="#dfe5ef" filter="url(#soft)"/>
+    <circle cx="31" cy="32" r="15" fill="url(#accent)"/>
+    <text x="31" y="37" fill="#ffffff" text-anchor="middle" font-size="11" font-weight="700">我</text>
+    <text x="54" y="29" class="ink" font-size="15" font-weight="700">你的插件口味画像</text>
+    <text x="54" y="50" class="muted" font-size="11">全部历史 · 已扫描 217 个会话、493 条你亲手发的消息、15 个工作目录</text>
+
+    <g transform="translate(720 20)">
+      <text x="0" y="0" class="ink" font-size="17" font-weight="700">217</text>
+      <text x="0" y="18" class="muted" font-size="9">会话</text>
+      <text x="75" y="0" class="ink" font-size="17" font-weight="700">493</text>
+      <text x="75" y="18" class="muted" font-size="9">你的消息</text>
+      <text x="168" y="0" class="ink" font-size="17" font-weight="700">1.4万</text>
+      <text x="168" y="18" class="muted" font-size="9">工具调用</text>
+      <text x="258" y="0" class="ink" font-size="17" font-weight="700">1,270</text>
+      <text x="258" y="18" class="muted" font-size="9">失败记录</text>
+    </g>
+
+    <line x1="22" y1="85" x2="1046" y2="85" stroke="#e7eaf0"/>
+    <text x="22" y="108" class="muted" font-size="9" letter-spacing="1">高频方向</text>
+    <g transform="translate(22 121)">
+      <rect width="112" height="25" rx="13" fill="#eef2f8"/>
+      <circle cx="12" cy="12.5" r="3" fill="#2878d0"/>
+      <text x="22" y="17" class="secondary" font-size="10" font-weight="600">浏览器与网页</text>
+      <text x="90" y="17" class="muted" font-size="9">9,053</text>
+
+      <rect x="120" width="104" height="25" rx="13" fill="#eef2f8"/>
+      <circle cx="132" cy="12.5" r="3" fill="#2c7a7b"/>
+      <text x="142" y="17" class="secondary" font-size="10" font-weight="600">工具与能力</text>
+      <text x="204" y="17" class="muted" font-size="9">4,058</text>
+
+      <rect x="232" width="118" height="25" rx="13" fill="#eef2f8"/>
+      <circle cx="244" cy="12.5" r="3" fill="#3e6f9d"/>
+      <text x="254" y="17" class="secondary" font-size="10" font-weight="600">开发与运行时</text>
+      <text x="333" y="17" class="muted" font-size="9">7,772</text>
+    </g>
+
+    <text x="480" y="108" class="muted" font-size="9" letter-spacing="1">正在帮你避开的问题</text>
+    <g transform="translate(480 121)">
+      <rect width="145" height="25" rx="13" fill="#fbefe5"/>
+      <text x="12" y="17" fill="#9b5a24" font-size="10">网页或网络失败 × 665</text>
+      <rect x="153" width="136" height="25" rx="13" fill="#fbefe5"/>
+      <text x="165" y="17" fill="#9b5a24" font-size="10">命令执行失败 × 218</text>
+    </g>
+  </g>
+
+  <g transform="translate(66 331)">
+    <rect width="240" height="31" rx="16" fill="#f1f3f7" stroke="#e0e5ee"/>
+    <rect x="2" y="2" width="80" height="27" rx="14" fill="#ffffff" filter="url(#soft)"/>
+    <text x="42" y="20" class="ink" text-anchor="middle" font-size="10">全部历史</text>
+    <text x="115" y="20" class="muted" text-anchor="middle" font-size="10">近一年</text>
+    <text x="174" y="20" class="muted" text-anchor="middle" font-size="10">近 90 天</text>
+    <text x="221" y="20" class="muted" text-anchor="middle" font-size="9">30 天</text>
+    <text x="1050" y="21" fill="#8a93a1" text-anchor="end" font-size="10">候选 5,959 个 · 已装 33 个自动排除 · 线上插件目录</text>
+  </g>
+
+  <g transform="translate(66 378)">
+    <g filter="url(#soft)">
+      <rect width="524" height="194" rx="16" fill="#ffffff" stroke="#e0e5ee"/>
+      <rect width="524" height="3" rx="1.5" fill="#2878d0" opacity="0.8"/>
+    </g>
+    <text x="17" y="24" class="muted" font-size="9">#1</text>
+    <rect x="41" y="10" width="91" height="20" rx="10" fill="#e9f1fb"/>
+    <circle cx="53" cy="20" r="2.5" fill="#2878d0"/>
+    <text x="61" y="24" fill="#2878d0" font-size="9">浏览器与网页</text>
+    <rect x="438" y="10" width="70" height="20" rx="10" fill="#eaf6f0"/>
+    <text x="473" y="24" fill="#23724e" text-anchor="middle" font-size="9">吻合度 97</text>
+    <rect x="18" y="45" width="38" height="38" rx="11" fill="#eaf2fc" stroke="#cfe0f5"/>
+    <text x="37" y="69" fill="#2878d0" text-anchor="middle" font-size="12" font-weight="700">KD</text>
+    <text x="68" y="58" class="ink" font-size="14" font-weight="700">@keenable/dsh-keenable</text>
+    <text x="68" y="76" class="muted" font-size="9">作者 keenableai · v0.1.2 · 12 天前</text>
+    <text x="18" y="105" class="secondary" font-size="11">为内置 web_search 与 web_fetch 提供网页搜索与网页读取，</text>
+    <text x="18" y="121" class="secondary" font-size="11">适用于任意模型，无需 API Key。</text>
+    <circle cx="22" cy="142" r="2.5" fill="#2878d0"/>
+    <text x="31" y="145" class="muted" font-size="9">你记录过 665 次「网页或网络失败」，这个方向与插件能力吻合</text>
+    <circle cx="22" cy="157" r="2.5" fill="#2878d0"/>
+    <text x="31" y="160" class="muted" font-size="9">你的历史里「浏览器与网页」信号较强</text>
+    <rect x="18" y="164" width="422" height="21" rx="6" fill="#f2f4f7"/>
+    <text x="28" y="178" class="mono" fill="#7d8694" font-size="8">dsh plugin --profile web add @keenable/dsh-keenable</text>
+    <rect x="448" y="164" width="58" height="21" rx="6" fill="#eef1f5"/>
+    <text x="477" y="178" class="muted" text-anchor="middle" font-size="8">复制</text>
+  </g>
+
+  <g transform="translate(610 378)">
+    <g filter="url(#soft)">
+      <rect width="524" height="194" rx="16" fill="#ffffff" stroke="#e0e5ee"/>
+      <rect width="524" height="3" rx="1.5" fill="#2c7a7b" opacity="0.8"/>
+    </g>
+    <text x="17" y="24" class="muted" font-size="9">#2</text>
+    <rect x="41" y="10" width="82" height="20" rx="10" fill="#e8f4f4"/>
+    <circle cx="53" cy="20" r="2.5" fill="#2c7a7b"/>
+    <text x="61" y="24" fill="#2c7a7b" font-size="9">工具与能力</text>
+    <rect x="438" y="10" width="70" height="20" rx="10" fill="#eaf6f0"/>
+    <text x="473" y="24" fill="#23724e" text-anchor="middle" font-size="9">吻合度 94</text>
+    <rect x="18" y="45" width="38" height="38" rx="11" fill="#e9f4f3" stroke="#cfe5e2"/>
+    <text x="37" y="69" fill="#2c7a7b" text-anchor="middle" font-size="12" font-weight="700">WP</text>
+    <text x="68" y="58" class="ink" font-size="14" font-weight="700">dsh-web-fetch-playwright</text>
+    <text x="68" y="76" class="muted" font-size="9">作者 chendefine · v0.2.22 · 6 天前</text>
+    <text x="18" y="105" class="secondary" font-size="11">为内置 web_fetch 提供 Playwright / CDP 后端，用真实浏览器</text>
+    <text x="18" y="121" class="secondary" font-size="11">渲染网页并返回更干净的 Markdown。</text>
+    <circle cx="22" cy="142" r="2.5" fill="#2c7a7b"/>
+    <text x="31" y="145" class="muted" font-size="9">你的历史里「浏览器与网页」信号较强</text>
+    <circle cx="22" cy="157" r="2.5" fill="#2c7a7b"/>
+    <text x="31" y="160" class="muted" font-size="9">目录中近期有更新，且和网页抓取痛点相关</text>
+    <rect x="18" y="164" width="422" height="21" rx="6" fill="#f2f4f7"/>
+    <text x="28" y="178" class="mono" fill="#7d8694" font-size="8">dsh plugin --profile web add dsh-web-fetch-playwright</text>
+    <rect x="448" y="164" width="58" height="21" rx="6" fill="#eef1f5"/>
+    <text x="477" y="178" class="muted" text-anchor="middle" font-size="8">复制</text>
+  </g>
+
+  <g transform="translate(66 586)">
+    <g filter="url(#soft)">
+      <rect width="524" height="104" rx="14" fill="#ffffff" stroke="#e0e5ee"/>
+    </g>
+    <text x="16" y="23" class="muted" font-size="9">#3</text>
+    <rect x="40" y="10" width="75" height="20" rx="10" fill="#f1edf9"/>
+    <text x="77" y="24" fill="#8b5bb5" text-anchor="middle" font-size="9">记忆与知识库</text>
+    <text x="16" y="53" class="ink" font-size="13" font-weight="700">dsh-memory-index</text>
+    <text x="16" y="72" class="secondary" font-size="10">长期记忆、项目上下文与知识库检索。</text>
+    <text x="16" y="91" class="muted" font-size="9">推荐理由：常提“记忆 / 上下文压缩 / 跨会话”</text>
+  </g>
+
+  <g transform="translate(610 586)">
+    <g filter="url(#soft)">
+      <rect width="524" height="104" rx="14" fill="#ffffff" stroke="#e0e5ee"/>
+    </g>
+    <text x="16" y="23" class="muted" font-size="9">#4</text>
+    <rect x="40" y="10" width="75" height="20" rx="10" fill="#eaf1f8"/>
+    <text x="77" y="24" fill="#3e6f9d" text-anchor="middle" font-size="9">开发与运行时</text>
+    <text x="16" y="53" class="ink" font-size="13" font-weight="700">dsh-context-guard</text>
+    <text x="16" y="72" class="secondary" font-size="10">控制工具输出预算，给长会话留出更多有效上下文。</text>
+    <text x="16" y="91" class="muted" font-size="9">推荐理由：检测到上下文和工具输出相关信号</text>
+  </g>
+
+  <text x="600" y="713" fill="#9aa2af" text-anchor="middle" font-size="9">示意界面 · 数据为演示 · 真实页面只在本机读取会话</text>
+</svg>

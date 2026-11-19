@@ -1,0 +1,7 @@
+node_modules/
+.scratch/
+.release-artifacts/
+data/catalog-cache.json
+data/feedback.json
+data/*.tmp-*
+.DS_Store
